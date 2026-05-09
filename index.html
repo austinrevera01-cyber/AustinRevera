@@ -54,14 +54,14 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba
 .sec { margin-bottom: 4rem; }
 .sec-label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mut); font-weight: 500; margin-bottom: 1.75rem; display: flex; align-items: center; gap: 12px; }
 .sec-label::after { content: ''; flex: 1; height: 0.5px; background: var(--brd); }
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1px; background: var(--brd); border: 0.5px solid var(--brd); border-radius: 12px; overflow: hidden; }
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--brd); border: 0.5px solid var(--brd); border-radius: 12px; overflow: hidden; }
 .card { background: var(--bg2); display: flex; flex-direction: column; transition: background 0.18s; }
 .card:hover { background: var(--bg3); }
 
 /* ==== SLIDESHOW ==== */
-.slideshow { width: 100%; height: 400px; background: var(--bg3); border-bottom: 0.5px solid var(--brd); position: relative; overflow: hidden; }
+.slideshow { width: 100%; height: 380px; background: var(--bg3); border-bottom: 0.5px solid var(--brd); position: relative; overflow: hidden; }
 .slides { display: flex; height: 100%; transition: transform 0.35s ease; }
-.slide { min-width: 100%; height: 400px; flex-shrink: 0; overflow: hidden; position: relative; }
+.slide { min-width: 100%; height: 380px; flex-shrink: 0; overflow: hidden; position: relative; }
 .slide img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .slide-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; width: 100%; height: 100%; }
 .slide-placeholder .ph-icon { font-size: 28px; opacity: 0.18; }
@@ -174,7 +174,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba
             <h2 class="card-title">BattleBot</h2>
             <div class="badges"><span class="badge bi">In Progress</span><span class="badge bl">Team Lead</span></div>
           </div>
-          <p class="desc">Senior design project: a sub $500, sub 12 lb combat robot built to defeat a rival university team. Features a <strong>dual drive system</strong> with an overhead axe weapon. Design complete and currently in the build phase.</p>
+          <p class="desc">Senior design project: a sub $500, sub 12 lb combat robot built to defeat a rival university team. Features a dual drive system with an overhead axe weapon. Design complete and currently in the build phase.</p>
           <div class="tools"><span class="tag">Fusion 360</span></div>
         </div>
       </div>
@@ -197,7 +197,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba
             <h2 class="card-title">6-Axis Robot Arm</h2>
             <div class="badges"><span class="badge bi">In Progress</span><span class="badge bs">Solo</span></div>
           </div>
-          <p class="desc">Personal build of a full 6-axis robot arm (XYZ + ABC) using NEMA 23 steppers and 3D printed parts. <strong>Gear differential joints</strong> amplify torque. Currently Arduino based with an ESP32 web interface planned for completion.</p>
+          <p class="desc">Personal build of a full 6-axis robot arm (XYZ + ABC) using NEMA 23 steppers and 3D printed parts. Gear differential joints amplify torque. Currently Arduino based with an ESP32 web interface planned for completion.</p>
           <div class="tools"><span class="tag">Fusion 360</span><span class="tag">Bambu P1S</span><span class="tag">Python</span><span class="tag">Arduino/ESP32</span></div>
         </div>
       </div>
@@ -219,7 +219,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba
             <h2 class="card-title">WAAM Slicer</h2>
             <div class="badges"><span class="badge bs">Solo</span></div>
           </div>
-          <p class="desc">Custom slicer for ICAM's Wire Arc Additive Manufacturing research. Generates a <strong>weaving toolpath pattern</strong> for walls and interior fill. Built in Rhino3D and exports custom G-code for the in-house WAAM printer.</p>
+          <p class="desc">Custom slicer for ICAM's Wire Arc Additive Manufacturing research. Generates a weaving toolpath pattern for walls and interior fill. Built in Rhino3D and exports custom G-code for the in-house WAAM printer.</p>
           <div class="tools"><span class="tag">Rhino3D</span><span class="tag">Python</span><span class="tag">C++</span><span class="tag">Fusion 360</span></div>
         </div>
       </div>
@@ -244,7 +244,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba
             <h2 class="card-title">MPCNC Router</h2>
             <div class="badges"><span class="badge bs">Solo</span></div>
           </div>
-          <p class="desc">Mostly printed CNC based on the V1E MPCNC design with custom router modifications. Primary use is cutting <strong>topographic formboard maps</strong> of US states using depth from color in Fusion 360.</p>
+          <p class="desc">Mostly printed CNC based on the V1E MPCNC design with custom router modifications. Primary use is cutting topographic formboard maps of US states using depth from color in Fusion 360.</p>
           <div class="tools"><span class="tag">Fusion 360</span><span class="tag">ESTLCam</span><span class="tag">Marlin</span><span class="tag">Ender 5 Pro</span></div>
         </div>
       </div>
@@ -291,7 +291,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba
             <h2 class="card-title">PongBot</h2>
             <div class="badges"><span class="badge bt">Team</span></div>
           </div>
-          <p class="desc">Autonomous robot that rolls a set distance, loads, and launches a ping pong ball into cups 10 feet away. Designed for <strong>high repeatability</strong> with the next version targeting improved alignment hardware.</p>
+          <p class="desc">Autonomous robot that rolls a set distance, loads, and launches a ping pong ball into cups 10 feet away. Designed for high repeatability with the next version targeting improved alignment hardware.</p>
           <div class="res"><span>&#10003;</span><span>3 out of 9 successful launches with a fully autonomous sequence</span></div>
           <div class="tools"><span class="tag">Fusion 360</span><span class="tag">Arduino</span><span class="tag">Bambu P1S</span></div>
         </div>
@@ -315,7 +315,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba
             <h2 class="card-title">Scratch Built DC Motor</h2>
             <div class="badges"><span class="badge bt">Team</span></div>
           </div>
-          <p class="desc">Built a DC motor from raw materials for a class arm wrestling competition. Used a <strong>ferrous core</strong> instead of plastic, trading peak amperage for superior initial torque.</p>
+          <p class="desc">Built a DC motor from raw materials for a class arm wrestling competition. Used a ferrous core instead of plastic, trading peak amperage for superior initial torque.</p>
           <div class="res"><span>&#10003;</span><span>Won the class arm wrestling competition</span></div>
           <div class="tools"><span class="tag">OMAX Waterjet</span></div>
         </div>
@@ -363,7 +363,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba
             <h2 class="card-title">Wii Bowling Robot</h2>
             <div class="badges"><span class="badge bt">Team</span></div>
           </div>
-          <p class="desc">Automated robot that plays a full game of Wii Bowling unassisted. Camera guidance was intentionally omitted since a strike requires the same motion every time, making <strong>mechanical repeatability the design goal</strong>. Slower ball speed was selected for consistency.</p>
+          <p class="desc">Automated robot that plays a full game of Wii Bowling unassisted. Camera guidance was intentionally omitted since a strike requires the same motion every time, making mechanical repeatability the design goal. Slower ball speed was selected for consistency.</p>
           <div class="tools"><span class="tag">Fusion 360</span><span class="tag">Bambu P1S</span><span class="tag">Arduino Mega</span></div>
         </div>
       </div>
