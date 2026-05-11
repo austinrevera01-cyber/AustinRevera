@@ -37,9 +37,9 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba
 .hero-text { flex: 1; }
 .headshot-wrap { flex-shrink: 0; }
 .headshot {
-  width: 200px; height: 200px; border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid var(--brd2);
+  width: 340px; height: 420px; border-radius: 12px;
+  object-fit: cover; object-position: center top;
+  border: 1px solid var(--brd2);
 }
 .headshot-placeholder {
   width: 200px; height: 200px; border-radius: 50%;
@@ -49,7 +49,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba
   background: var(--bg2);
 }
 .headshot-placeholder .ph-i { font-size: 28px; opacity: 0.3; }
-@media (max-width: 700px) { .hero-inner { flex-direction: column-reverse; gap: 2rem; } .headshot, .headshot-placeholder { width: 120px; height: 120px; } }
+@media (max-width: 700px) { .hero-inner { flex-direction: column-reverse; gap: 2rem; } .headshot, .headshot-placeholder { width: 100%; height: 240px; } }
 
 .sec { margin-bottom: 4rem; }
 .sec-label { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mut); font-weight: 500; margin-bottom: 1.75rem; display: flex; align-items: center; gap: 12px; }
